@@ -1,42 +1,106 @@
 /* src/App.css */
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: antiquewhite;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f2f5;
-  font-family: Arial, sans-serif;
 }
-/* src/App.css */
-.button-group {
+
+header {
+  text-align: center;
+}
+
+.jumbotron {
+  font-size: 20px;
+  width: 700px;
+  margin-left: 0px;
+  padding:0;
+  padding-top: 0;
+  background-color: #201E43;
+  text-align: center;
+  color: white;
+}
+
+ul {
   display: flex;
-  gap: 10px; /* Menambahkan jarak antara tombol */
+  gap: 1em;
+  padding-inline: 1em;
+  padding-right: 0px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+li {
+  list-style-type: none;
+  font: menu;
+}
+
+nav {
+  background-color: #134B70;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  width: 700px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.App {
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column; /* Untuk mengatur konten vertikal */
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Memberikan padding pada aplikasi */
+}
+
 .converter {
-  background-color: white;
+  background-color: #ffd;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
+  margin-left: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 640px;
 }
 
 h1 {
-  text-align: center;
   color: #1a73e8;
-  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+}
+.h1-font{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
+h2, h3 {
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 900;
+}
 .icon {
   color: #1a73e8;
 }
 
-.input-group {
-  margin-bottom: 1rem;
+.input-group, .output-group {
+  width: 100%;
+  margin-bottom: 10px; /* Spasi antar elemen */
 }
 
 label {
@@ -58,4 +122,87 @@ input:focus {
   border-color: #1a73e8;
   box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
 }
-.pad{padding-top: 20px;}
+
+.pad { 
+  padding-top: 10px; 
+}
+
+.suhu-style {
+  font-size: larger;
+  font-family: math;
+  font-style: italic;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Menambahkan jarak antara tombol */
+  flex-wrap: wrap; /* Membuat tombol berpindah ke baris berikutnya jika ruang tidak cukup */
+}
+
+.button {
+  color: white;
+  padding: 8px;
+  font-weight: bolder;
+  border: outset;
+  border-width: thick;
+  flex: 1; /* Membuat tombol memenuhi ruang yang tersedia */
+}
+
+.button-convert {
+  background-color: #1A73F4;
+}
+
+.button-reset {
+  background-color: #b90101;
+}
+
+.button-reverse {
+  background-color: #acbb0b;
+}
+
+.footer {
+  background-color: #201e43;
+  color: #fff;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  width: 640px;
+  margin-left: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: xx-small;
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+  .footer,.converter {
+    max-width: 300px;
+  }
+  .jumbotron,nav {
+    width: 360px;
+  }
+  input {
+    width: 90%;
+  }
+  .button {
+    width: 50%;
+  }
+}
+@media (min-width: 480px) and (max-width: 649px) {
+  .footer,.converter {
+    max-width: 420px;
+  }
+  .jumbotron,nav {
+    width: 480px;
+  }
+}
+@media (max-width: 650) {
+  .footer,.converter {
+    max-width: 420px;
+  }
+  .jumbotron,nav {
+    width: 500px;;
+  }
+  
+}
