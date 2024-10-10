@@ -550,7 +550,6 @@ function App() {
         </section>
 
         <section className="how-calculate">
-          <h2>Formula</h2>
           <p>{howCalculate}</p>
         </section>
       </main>
