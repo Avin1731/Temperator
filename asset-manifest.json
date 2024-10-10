@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Temperator/static/css/main.2d67d349.css",
+    "main.js": "/Temperator/static/js/main.844b73be.js",
+    "static/js/453.ed3810f9.chunk.js": "/Temperator/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Temperator/index.html",
+    "main.2d67d349.css.map": "/Temperator/static/css/main.2d67d349.css.map",
+    "main.844b73be.js.map": "/Temperator/static/js/main.844b73be.js.map",
+    "453.ed3810f9.chunk.js.map": "/Temperator/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d67d349.css",
+    "static/js/main.844b73be.js"
+  ]
+}
